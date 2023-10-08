@@ -1,6 +1,0 @@
-export CUDA_VISIBLE_DEVICES=2,3,4,6
-
-#bash tools/dist_test.sh configs/soft_teacher/ubsoft_teacher_faster_rcnn_r50_caffe_fpn_coco_180k.py work_dirs/ubsoft_teacher_faster_rcnn_r50_caffe_fpn_coco_180k/coco1/baseline/iter_120000.pth 2 --eval bbox
-#bash tools/dist_test.sh configs/soft_teacher/ubsoft_teacher_grs_faster_rcnn_r50_caffe_fpn_coco_180k.py work_dirs/ubsoft_teacher_grs_faster_rcnn_r50_caffe_fpn_coco_180k/coco2/grs2/iter_144000.pth 2 --eval bbox
-# bash tools/dist_test.sh configs/soft_teacher/ubsoft_teacher_grs_faster_rcnn_r50_caffe_fpn_lvis_180k.py work_dirs/ubsoft_teacher_grs_faster_rcnn_r50_caffe_fpn_lvis_180k/lvis/grs/iter_96000.pth 2 --eval bbox
-bash tools/dist_test.sh configs/soft_teacher/ubsoft_teacher_grs_faster_rcnn_r50_caffe_fpn_object365_360k.py work_dirs/ubsoft_teacher_grs_faster_rcnn_r50_caffe_fpn_object365_360k/object365/grs3/iter_172000.pth 2 --eval bbox
