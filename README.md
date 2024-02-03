@@ -5,22 +5,22 @@ The official code for our ICCV2023 paper ["Gradient-based Sampling for Class Imb
 ## Process(In preparation):
 1. [✓] Submit the initial code.
 2. [-] Submit the datasets and the instructions of data preparation().
-3. [-] Submit the instructions for environment installation.
+3. [✓] Submit the instructions for environment installation.
 4. [] Submit the instructions for training and testing.
 5. [] Reproduce the results with the current code and submit the checkpoints.
 6. [] Modify the initial code for robustness.
 
 ## Usage:
 ### Date preparation
-The annotations for labeled and unlabeled images for all three sub-tasks  can be downloaded from [Google Drive](https://drive.google.com/drive/folders/11ggu8fnimMDS8w2dcqUTLs2xtyNceuCO)
-#### COCO sub-task
-- Download the COCO2017 dataset(including training and val images) from [this link](https://cocodataset.org/#download)
-- Download the annotations for split1 and split2 for  from [Google Drive](https://drive.google.com/drive/folders/11ggu8fnimMDS8w2dcqUTLs2xtyNceuCO)
+
+#### MS-COCO sub-task
+- Download the COCO2017 dataset(including training and val images) from [this link](https://cocodataset.org/#download).
+- Download the annotations for split1 and split2 for  from [Google Drive](https://drive.google.com/drive/folders/11ggu8fnimMDS8w2dcqUTLs2xtyNceuCO).
 - Organize the data as the following structure(or rewrite the path in configs as you need):
 ```
 CISSOD/
     dataset/
-        coco
+        coco/
             train2017/
             val2017/
             annotations/
@@ -30,6 +30,44 @@ CISSOD/
                 instances_train2017_coco_split2_unlabel.json
 
 ```
+
+#### MS-COCO → Object365
+- Download the COCO2017 dataset(including training and instances_train2017.json) from [this link](https://cocodataset.org/#download).
+- Download the Object365dataset(including training and val images) from .
+- Download the annotations from [Google Drive](https://drive.google.com/drive/folders/11ggu8fnimMDS8w2dcqUTLs2xtyNceuCO).
+- Organize the data as the following structure(or rewrite the path in configs as you need):
+```
+CISSOD/
+    dataset/
+        coco/
+            train2017/
+            val2017/
+            annotations/
+                instances_train2017.json
+
+        Object365/
+           
+
+```
+
+#### LVIS
+- Download the COCO2017 dataset(including training and val images) from [this link](https://cocodataset.org/#download).
+- Download the LVIS annotations from .
+- Download the annotations from [Google Drive](https://drive.google.com/drive/folders/11ggu8fnimMDS8w2dcqUTLs2xtyNceuCO).
+- Organize the data as the following structure(or rewrite the path in configs as you need):
+```
+CISSOD/
+    dataset/
+        coco/
+            train2017/
+            val2017/
+        lvis/
+            annotations/
+                lvis_v1_train_lvis_label.json
+                lvis_v1_train_lvis_unlabel.json
+                lvis_v1_val.json
+```
+
 
 ## Installation:
 You can follow the [Soft teacher](https://github.com/microsoft/SoftTeacher/) to finish the installation. Note that we do not use the wandb.
