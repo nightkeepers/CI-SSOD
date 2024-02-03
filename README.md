@@ -1,13 +1,13 @@
 # CI-SSOD
 
-The offical code for our ICCV2023 paper ["Gradient-based Sampling for Class Imbalanced Semi-supervised Object Detection"](https://openaccess.thecvf.com/content/ICCV2023/html/Li_Gradient-based_Sampling_for_Class_Imbalanced_Semi-supervised_Object_Detection_ICCV_2023_paper.html).
+The official code for our ICCV2023 paper ["Gradient-based Sampling for Class Imbalanced Semi-supervised Object Detection"](https://openaccess.thecvf.com/content/ICCV2023/html/Li_Gradient-based_Sampling_for_Class_Imbalanced_Semi-supervised_Object_Detection_ICCV_2023_paper.html).
 
 ## Process(In preparation):
 1. [✓] Submit the initial code.
-2. [-] Submit the datasets and the instruction of data preparation().
-3. [-] Submit the instruction of environment installation.
-4. [] Submit the instruction of training and testing.
-5. [] Reproduce the results with current code and submit the checkpoints.
+2. [-] Submit the datasets and the instructions of data preparation().
+3. [-] Submit the instructions for environment installation.
+4. [] Submit the instructions for training and testing.
+5. [] Reproduce the results with the current code and submit the checkpoints.
 6. [] Modify the initial code for robustness.
 
 ## Usage:
@@ -23,7 +23,7 @@ CISSOD/
         coco
             train2017/
             val2017/
-            annotraions/
+            annotations/
                 instances_train2017_coco_split1_label.json
                 instances_train2017_coco_split1_unlabel.json
                 instances_train2017_coco_split2_label.json
@@ -34,12 +34,7 @@ CISSOD/
 ## Installation:
 You can follow the [Soft teacher](https://github.com/microsoft/SoftTeacher/) to finish the installation. Note that we do not use the wandb.
 
+## Training:
 
-## Acknowlegment:
+## Acknowledgment:
 The code is heavily borrowed from [Soft teacher](https://github.com/microsoft/SoftTeacher/) and thanks for their contribution.
-
-
-
-   
-
-
